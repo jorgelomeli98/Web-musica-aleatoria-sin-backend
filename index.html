@@ -21,12 +21,11 @@
         background-color: #121212;
         color: white;
         text-align: center;
-        padding: 20px;
       }
 
       #load-music {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         background-color: #1db954;
         border: none;
         border-radius: 50%;
@@ -42,38 +41,28 @@
         transform: scale(1.1);
       }
 
-      #load-music img {
-        width: 50%;
-        height: auto;
+      #load-music svg {
+        width: 200px;
+        height: 200px;
+        fill: white;
       }
 
-      /* Diseño responsivo */
-      @media (max-width: 768px) {
-        #load-music {
-          width: 200px;
-          height: 200px;
-        }
-
-        #load-music svg {
-          width: 50%;
-        }
+      #load-music {
+        width: 25vw;
+        height: 25vw;
+        max-width: 200px;
+        max-height: 200px;
       }
 
-      @media (max-width: 480px) {
-        #load-music {
-          width: 150px;
-          height: 150px;
-        }
-
-        #load-music img {
-          width: 50%;
-        }
+      #load-music svg {
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
   <body>
     <button id="load-music">
-      <img src="icons/shuffle.svg" alt="Icono Shuffle" />
+      <img src="icons/shuffle.svg" alt="Icono Shuffle" width="50" height="50" />
     </button>
 
     <script src="script.js"></script>
